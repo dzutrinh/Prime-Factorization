@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <string>	// requires C++ 11 to compile stol()
-					// if not please consider using atol() from stdlib.h
+			// if not please consider using atol() from stdlib.h
 
 using namespace std;
 
