@@ -30,15 +30,15 @@ int main(int argc, char * argv[])
 
 	// ----
 	// main algorithm, kinda naive and doesn't fit for using with big integers
-	i = 2;
+	i = 2;					// start with 2, first prime
 	while (n > 1)				// loop while n still greater than 1
 	{
-		while (n % i == 0)		// divisible test
+		while (n % i == 0)		// while still divisible
 		{
-			cout << i << " ";	// found a divisor
-			n = n / i;
+			cout << i << " ";	// print out that divisor
+			n = n / i;		// divide n by i
 		}
-		i++;	// next divisor test
+		i++;	// next divisor
 	}
 
 	cout << endl;
