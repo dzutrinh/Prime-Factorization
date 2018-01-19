@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <string>	// requires C++ 11 to compile stol()
-			// if not please consider using atol() from stdlib.h
+					// if not please consider using atol() from stdlib.h
 
 using namespace std;
 
@@ -30,15 +30,15 @@ int main(int argc, char * argv[])
 
 	// ----
 	// main algorithm, kinda naive and doesn't fit for using with big integers
-	i = 2;					// start with 2, first prime
+	i = 2;						// start with 2, first prime
 	while (n > 1)				// loop while n still greater than 1
 	{
 		while (n % i == 0)		// while still divisible
 		{
 			cout << i << " ";	// print out that divisor
-			n = n / i;		// divide n by i
+			n = n / i;			// divide n by i
 		}
-		i++;	// next divisor
+		i++;					// next divisor
 	}
 
 	cout << endl;
